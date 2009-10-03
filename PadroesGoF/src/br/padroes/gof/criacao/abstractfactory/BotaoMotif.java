@@ -1,4 +1,4 @@
-package br.padroes.abstractfactory;
+package br.padroes.gof.criacao.abstractfactory;
 
 class BotaoMotif extends Botao
 {
