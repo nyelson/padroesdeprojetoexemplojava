@@ -1,6 +1,6 @@
 package br.padroes.gof.criacao.abstractfactory;
 
-public class Cliente
+public class ClienteAbstractFactory
 {
     public static void main(String[] args)
     {
