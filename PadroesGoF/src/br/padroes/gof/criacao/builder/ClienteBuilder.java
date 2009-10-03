@@ -1,6 +1,6 @@
 package br.padroes.gof.criacao.builder;
 
-public class Cliente {
+public class ClienteBuilder {
 	 
  	public static void main(String[] args) {
  
