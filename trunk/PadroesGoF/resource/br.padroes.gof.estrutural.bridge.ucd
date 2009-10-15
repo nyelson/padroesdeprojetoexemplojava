@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="bridge" size="961,462" id="" metadata="uml2-1.0" initialized="true" zoom="0.75" scrolledY="-60" tag="1000" key="32303037303533312D3130303020506164726F6573476F462F726F6F74">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.1" name="QuestionFormatAbstraction" location="135,364" size="244,99" id="br.padroes.gof.estrutural.bridge/QuestionFormatAbstraction" runTimeClassModel="displayAll(),QuestionFormatAbstraction(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="186,36">
+      <children xsi:type="editmodel:MethodEditModel" name="QuestionFormatAbstraction" id="br.padroes.gof.estrutural.bridge/QuestionFormatAbstraction#QuestionFormatAbstraction(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayAll" id="br.padroes.gof.estrutural.bridge/QuestionFormatAbstraction#displayAll()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="br.padroes.gof.estrutural.bridge/QuestionManagerAbstraction&lt;-br.padroes.gof.estrutural.bridge/QuestionFormatAbstraction" source="//@children.0" target="//@children.2" targetEnd="//@children.0/@sourceConnections.0/@children.1" sourceEnd="//@children.0/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="121,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="121,237"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ClienteBridge" location="705,390" size="206,81" id="br.padroes.gof.estrutural.bridge/ClienteBridge" runTimeClassModel="main([Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="59,18">
+      <children xsi:type="editmodel:MethodEditModel" name="main" location="370,390" id="br.padroes.gof.estrutural.bridge/ClienteBridge#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.padroes.gof.estrutural.bridge/ClienteBridge-Soyatec::Import->br.padroes.gof.estrutural.bridge/QuestionBridge" source="//@children.1" target="//@children.4" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="51,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="103,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="103,184"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.padroes.gof.estrutural.bridge/ClienteBridge-Soyatec::Import->br.padroes.gof.estrutural.bridge/QuestionFormatAbstraction" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="51,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,36" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="244,62"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.0" name="QuestionManagerAbstraction" location="135,-60" size="257,237" id="br.padroes.gof.estrutural.bridge/QuestionManagerAbstraction" runTimeClassModel="displayAll(),catalog,delete(Ljava.lang.String;),newOne(Ljava.lang.String;),display(),QuestionManagerAbstraction(Ljava.lang.String;),next(),prior()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="102,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="catalog" id="br.padroes.gof.estrutural.bridge/QuestionManagerAbstraction#catalog"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="195,126">
+      <children xsi:type="editmodel:MethodEditModel" name="QuestionManagerAbstraction" id="br.padroes.gof.estrutural.bridge/QuestionManagerAbstraction#QuestionManagerAbstraction(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delete" id="br.padroes.gof.estrutural.bridge/QuestionManagerAbstraction#delete(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="display" id="br.padroes.gof.estrutural.bridge/QuestionManagerAbstraction#display()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayAll" id="br.padroes.gof.estrutural.bridge/QuestionManagerAbstraction#displayAll()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="newOne" id="br.padroes.gof.estrutural.bridge/QuestionManagerAbstraction#newOne(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="next" id="br.padroes.gof.estrutural.bridge/QuestionManagerAbstraction#next()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="prior" id="br.padroes.gof.estrutural.bridge/QuestionManagerAbstraction#prior()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.padroes.gof.estrutural.bridge/QuestionManagerAbstraction-Soyatec::Import->br.padroes.gof.estrutural.bridge/QuestionBridge" source="//@children.2" target="//@children.4" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="51,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="257,84" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,99"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="JavaQuestions" location="945,176" size="206,189" id="br.padroes.gof.estrutural.bridge/JavaQuestions" runTimeClassModel="displayQuestion(),newQuestion(Ljava.lang.String;),displayAllQuestions(),deleteQuestion(Ljava.lang.String;),nextQuestion(),priorQuestion(),JavaQuestions()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="142,126">
+      <children xsi:type="editmodel:MethodEditModel" name="JavaQuestions" location="25,60" id="br.padroes.gof.estrutural.bridge/JavaQuestions#JavaQuestions()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="deleteQuestion" id="br.padroes.gof.estrutural.bridge/JavaQuestions#deleteQuestion(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayAllQuestions" id="br.padroes.gof.estrutural.bridge/JavaQuestions#displayAllQuestions()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayQuestion" id="br.padroes.gof.estrutural.bridge/JavaQuestions#displayQuestion()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="newQuestion" id="br.padroes.gof.estrutural.bridge/JavaQuestions#newQuestion(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="nextQuestion" id="br.padroes.gof.estrutural.bridge/JavaQuestions#nextQuestion()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="priorQuestion" id="br.padroes.gof.estrutural.bridge/JavaQuestions#priorQuestion()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="br.padroes.gof.estrutural.bridge/QuestionBridge&lt;-br.padroes.gof.estrutural.bridge/JavaQuestions" source="//@children.3" target="//@children.4" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="14,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="190,184"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.3/@sourceConnections.0 //@children.1/@sourceConnections.0 //@children.5/@sourceConnections.0 //@children.2/@sourceConnections.0" name="QuestionBridge" location="705,-75" size="206,184" id="br.padroes.gof.estrutural.bridge/QuestionBridge" runTimeClassModel="displayQuestion(),newQuestion(Ljava.lang.String;),displayAllQuestions(),deleteQuestion(Ljava.lang.String;),nextQuestion(),priorQuestion()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="142,108">
+      <children xsi:type="editmodel:MethodEditModel" name="deleteQuestion" id="br.padroes.gof.estrutural.bridge/QuestionBridge#deleteQuestion(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayAllQuestions" id="br.padroes.gof.estrutural.bridge/QuestionBridge#displayAllQuestions()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayQuestion" location="38,139" id="br.padroes.gof.estrutural.bridge/QuestionBridge#displayQuestion()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="newQuestion" id="br.padroes.gof.estrutural.bridge/QuestionBridge#newQuestion(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="nextQuestion" location="4,126" id="br.padroes.gof.estrutural.bridge/QuestionBridge#nextQuestion()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="priorQuestion" id="br.padroes.gof.estrutural.bridge/QuestionBridge#priorQuestion()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="OracleQuestions" location="479,195" size="206,189" id="br.padroes.gof.estrutural.bridge/OracleQuestions" runTimeClassModel="OracleQuestions(),displayQuestion(),displayAllQuestions(),newQuestion(Ljava.lang.String;),deleteQuestion(Ljava.lang.String;),nextQuestion(),priorQuestion()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="142,126">
+      <children xsi:type="editmodel:MethodEditModel" name="OracleQuestions" id="br.padroes.gof.estrutural.bridge/OracleQuestions#OracleQuestions()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="deleteQuestion" id="br.padroes.gof.estrutural.bridge/OracleQuestions#deleteQuestion(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayAllQuestions" id="br.padroes.gof.estrutural.bridge/OracleQuestions#displayAllQuestions()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="displayQuestion" id="br.padroes.gof.estrutural.bridge/OracleQuestions#displayQuestion()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="newQuestion" id="br.padroes.gof.estrutural.bridge/OracleQuestions#newQuestion(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="nextQuestion" id="br.padroes.gof.estrutural.bridge/OracleQuestions#nextQuestion()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="priorQuestion" id="br.padroes.gof.estrutural.bridge/OracleQuestions#priorQuestion()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="br.padroes.gof.estrutural.bridge/QuestionBridge&lt;-br.padroes.gof.estrutural.bridge/OracleQuestions" source="//@children.5" target="//@children.4" targetEnd="//@children.5/@sourceConnections.0/@children.1" sourceEnd="//@children.5/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="181,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="27,184"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
