@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="906,956" id="br.padroes.gof.comportamental.visitor" metadata="uml2-1.0" initialized="true" scrolledY="29" tag="1000" key="32303037303533312D3130303020506164726F6573476F462F726F6F74">
+  <children xsi:type="editmodel:ClassEditModel" name="ClienteVisitor" location="720,420" size="140,68" id="br.padroes.gof.comportamental.visitor/ClienteVisitor" runTimeClassModel="main([Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="59,18">
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="br.padroes.gof.comportamental.visitor/ClienteVisitor#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="CarElementDoVisitor" location="50,538" size="194,122" id="br.padroes.gof.comportamental.visitor/CarElementDoVisitor" runTimeClassModel="visit(Lbr.padroes.gof.comportamental.visitor.Engine;),visit(Lbr.padroes.gof.comportamental.visitor.Wheel;),visit(Lbr.padroes.gof.comportamental.visitor.Car;),visit(Lbr.padroes.gof.comportamental.visitor.Body;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="54,72">
+      <children xsi:type="editmodel:MethodEditModel" name="visit" id="br.padroes.gof.comportamental.visitor/CarElementDoVisitor#visit(Lbr.padroes.gof.comportamental.visitor.Car;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="visit" id="br.padroes.gof.comportamental.visitor/CarElementDoVisitor#visit(Lbr.padroes.gof.comportamental.visitor.Wheel;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="visit" id="br.padroes.gof.comportamental.visitor/CarElementDoVisitor#visit(Lbr.padroes.gof.comportamental.visitor.Engine;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="visit" id="br.padroes.gof.comportamental.visitor/CarElementDoVisitor#visit(Lbr.padroes.gof.comportamental.visitor.Body;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.3/@sourceConnections.0" autoLocated="true" id="br.padroes.gof.comportamental.visitor/CarElementVisitor&lt;-br.padroes.gof.comportamental.visitor/CarElementDoVisitor" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="97,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="87,135" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.1/@sourceConnections.0" name="CarElementVisitor" location="171,330" size="174,135" id="br.padroes.gof.comportamental.visitor/CarElementVisitor" runTimeClassModel="visit(Lbr.padroes.gof.comportamental.visitor.Engine;),visit(Lbr.padroes.gof.comportamental.visitor.Wheel;),visit(Lbr.padroes.gof.comportamental.visitor.Car;),visit(Lbr.padroes.gof.comportamental.visitor.Body;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="54,72">
+      <children xsi:type="editmodel:MethodEditModel" name="visit" id="br.padroes.gof.comportamental.visitor/CarElementVisitor#visit(Lbr.padroes.gof.comportamental.visitor.Car;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="visit" id="br.padroes.gof.comportamental.visitor/CarElementVisitor#visit(Lbr.padroes.gof.comportamental.visitor.Body;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="visit" id="br.padroes.gof.comportamental.visitor/CarElementVisitor#visit(Lbr.padroes.gof.comportamental.visitor.Wheel;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="visit" id="br.padroes.gof.comportamental.visitor/CarElementVisitor#visit(Lbr.padroes.gof.comportamental.visitor.Engine;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="CarElementPrintVisitor" location="274,538" size="209,122" id="br.padroes.gof.comportamental.visitor/CarElementPrintVisitor" runTimeClassModel="visit(Lbr.padroes.gof.comportamental.visitor.Engine;),visit(Lbr.padroes.gof.comportamental.visitor.Wheel;),visit(Lbr.padroes.gof.comportamental.visitor.Car;),visit(Lbr.padroes.gof.comportamental.visitor.Body;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="54,72">
+      <children xsi:type="editmodel:MethodEditModel" name="visit" id="br.padroes.gof.comportamental.visitor/CarElementPrintVisitor#visit(Lbr.padroes.gof.comportamental.visitor.Wheel;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="visit" id="br.padroes.gof.comportamental.visitor/CarElementPrintVisitor#visit(Lbr.padroes.gof.comportamental.visitor.Engine;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="visit" id="br.padroes.gof.comportamental.visitor/CarElementPrintVisitor#visit(Lbr.padroes.gof.comportamental.visitor.Car;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="visit" id="br.padroes.gof.comportamental.visitor/CarElementPrintVisitor#visit(Lbr.padroes.gof.comportamental.visitor.Body;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="br.padroes.gof.comportamental.visitor/CarElementVisitor&lt;-br.padroes.gof.comportamental.visitor/CarElementPrintVisitor" source="//@children.3" target="//@children.1/@sourceConnections.0" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="104,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Wheel" location="411,181" size="105,104" id="br.padroes.gof.comportamental.visitor/Wheel" runTimeClassModel="getName(),accept(Lbr.padroes.gof.comportamental.visitor.CarElementVisitor;),Wheel(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="82,54">
+      <children xsi:type="editmodel:MethodEditModel" name="Wheel" id="br.padroes.gof.comportamental.visitor/Wheel#Wheel(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="accept" id="br.padroes.gof.comportamental.visitor/Wheel#accept(Lbr.padroes.gof.comportamental.visitor.CarElementVisitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getName" id="br.padroes.gof.comportamental.visitor/Wheel#getName()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="br.padroes.gof.comportamental.visitor/CarElement&lt;-br.padroes.gof.comportamental.visitor/Wheel" source="//@children.4" target="//@children.5/@sourceConnections.0" targetEnd="//@children.4/@sourceConnections.0/@children.1" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="52,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Body" location="50,181" size="91,68" id="br.padroes.gof.comportamental.visitor/Body" runTimeClassModel="accept(Lbr.padroes.gof.comportamental.visitor.CarElementVisitor;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="68,18">
+      <children xsi:type="editmodel:MethodEditModel" name="accept" id="br.padroes.gof.comportamental.visitor/Body#accept(Lbr.padroes.gof.comportamental.visitor.CarElementVisitor;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.6/@sourceConnections.0 //@children.4/@sourceConnections.0 //@children.7/@sourceConnections.0" autoLocated="true" id="br.padroes.gof.comportamental.visitor/CarElement&lt;-br.padroes.gof.comportamental.visitor/Body" source="//@children.5" target="//@children.8" targetEnd="//@children.5/@sourceConnections.0/@children.1" sourceEnd="//@children.5/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="45,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="63,81" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Car" location="171,181" size="210,122" id="br.padroes.gof.comportamental.visitor/Car" runTimeClassModel="accept(Lbr.padroes.gof.comportamental.visitor.CarElementVisitor;),Car(),getElements(),elements">
+    <children xsi:type="editmodel:CompartmentEditModel" size="187,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="elements" id="br.padroes.gof.comportamental.visitor/Car#elements"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="102,54">
+      <children xsi:type="editmodel:MethodEditModel" name="Car" id="br.padroes.gof.comportamental.visitor/Car#Car()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="accept" id="br.padroes.gof.comportamental.visitor/Car#accept(Lbr.padroes.gof.comportamental.visitor.CarElementVisitor;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getElements" id="br.padroes.gof.comportamental.visitor/Car#getElements()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="br.padroes.gof.comportamental.visitor/CarElement&lt;-br.padroes.gof.comportamental.visitor/Car" source="//@children.6" target="//@children.5/@sourceConnections.0" targetEnd="//@children.6/@sourceConnections.0/@children.1" sourceEnd="//@children.6/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="105,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Engine" location="546,181" size="92,68" id="br.padroes.gof.comportamental.visitor/Engine" runTimeClassModel="accept(Lbr.padroes.gof.comportamental.visitor.CarElementVisitor;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="68,18">
+      <children xsi:type="editmodel:MethodEditModel" name="accept" id="br.padroes.gof.comportamental.visitor/Engine#accept(Lbr.padroes.gof.comportamental.visitor.CarElementVisitor;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="br.padroes.gof.comportamental.visitor/CarElement&lt;-br.padroes.gof.comportamental.visitor/Engine" source="//@children.7" target="//@children.5/@sourceConnections.0" targetEnd="//@children.7/@sourceConnections.0/@children.1" sourceEnd="//@children.7/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="46,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.5/@sourceConnections.0" name="CarElement" location="293,50" size="127,81" id="br.padroes.gof.comportamental.visitor/CarElement" runTimeClassModel="accept(Lbr.padroes.gof.comportamental.visitor.CarElementVisitor;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="68,18">
+      <children xsi:type="editmodel:MethodEditModel" name="accept" id="br.padroes.gof.comportamental.visitor/CarElement#accept(Lbr.padroes.gof.comportamental.visitor.CarElementVisitor;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
